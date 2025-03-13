@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>XML to JSON Converter</title>
+</head>
+
+<body>
+	<center>
+		<hr>
+	<h2 style="background-color: cyan;">Upload XML File</h2>
+	<hr>
+	<form action="/convert" method="post" enctype="multipart/form-data">
+		<input type="file" name="file" accept=".xml" required>
+		<button type="submit">Convert to JSON</button>
+	</form>
+<b>	<p style="color: mediumspringgreen;" th:text="${message}"></p></b>
+	</center>
+</body>
+
+</html>
